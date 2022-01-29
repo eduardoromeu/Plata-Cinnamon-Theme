@@ -65,7 +65,21 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .separator { height: 1px; margin: 0; padding: 0; border-color: #1b1b1b; border-bottom-width: 1px; border-bottom-style: solid; background-color: transparent; }
 
-.popup-slider-menu-item, .slider { height: 16px; min-width: 15em; border: 0 solid transparent; border-right-width: 3px; border-left-width: 3px; color: #7986cb; -slider-height: 2px; -slider-background-color: rgba(245, 245, 245, 0.2); -slider-border-color: transparent; -slider-active-background-color: #7986cb; -slider-active-border-color: transparent; -slider-border-width: 0; -slider-handle-radius: 8px; }
+.popup-slider-menu-item, .slider {
+    height: 16px;
+    min-width: 15em;
+    border: 0 solid transparent;
+    border-right-width: 3px;
+    border-left-width: 3px; 
+    color: #5294e2; 
+    -slider-height: 2px;
+    -slider-background-color: rgba(245, 245, 245, 0.2); 
+    -slider-border-color: transparent; 
+    -slider-active-background-color: #5294e2;
+    -slider-active-border-color: transparent; 
+    -slider-border-width: 0; 
+    -slider-handle-radius: 8px; 
+}
 
 .radiobutton CinnamonGenericContainer, .check-box CinnamonGenericContainer { min-height: 26.66px; spacing: 0.4em; padding-top: 5.33px; }
 
@@ -583,9 +597,20 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
     width: 2px;
 }
 
-/* Notificações */
+/* Notifications */
 
-#notification { width: 34em; spacing-rows: 10px; spacing-columns: 10px; margin-from-right-edge-of-screen: 20px; padding: 13px; border-radius: 8.5px; background-color: rgba(17, 17, 17, 0.93); color: #f5f5f5; box-shadow: 0 10px 14px rgba(0, 0, 0, 0.44); }
+#notification {
+    width: 34em;
+    spacing-rows: 10px; 
+    spacing-columns: 10px; 
+    margin-from-right-edge-of-screen: 20px; 
+    padding: 13px; 
+    /* border-radius: 8.5px;  */
+    border-radius: 5px; 
+    background-color: rgba(17, 17, 17, 0.93); 
+    color: #f5f5f5; 
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.44);
+}
 
 .menu #notification, .menu #notification.multi-line-notification, .popup-menu #notification, .popup-menu #notification.multi-line-notification { padding: 9px; border-radius: 0; border: 1px solid rgba(255, 255, 255, 0.15); background-color: #111111; color: #f5f5f5; box-shadow: 0 0 transparent; }
 
@@ -902,13 +927,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .grouped-window-list-item-demands-attention, .window-list-item-demands-attention { color: white; }
 
-.panel-top .grouped-window-list-item-demands-attention, .panel-top .window-list-item-demands-attention { box-shadow: inset 0 2px #7986cb; }
+.panel-top .grouped-window-list-item-demands-attention, .panel-top .window-list-item-demands-attention { box-shadow: inset 0 2px #5294e2; }
 
-.panel-bottom .grouped-window-list-item-demands-attention, .panel-bottom .window-list-item-demands-attention { box-shadow: inset 0 -2px #7986cb; }
+.panel-bottom .grouped-window-list-item-demands-attention, .panel-bottom .window-list-item-demands-attention { box-shadow: inset 0 -2px #5294e2; }
 
-.panel-left .grouped-window-list-item-demands-attention, .panel-left .window-list-item-demands-attention { box-shadow: inset 2px 0 #7986cb; }
+.panel-left .grouped-window-list-item-demands-attention, .panel-left .window-list-item-demands-attention { box-shadow: inset 2px 0 #5294e2; }
 
-.panel-right .grouped-window-list-item-demands-attention, .panel-right .window-list-item-demands-attention { box-shadow: inset -2px 0 #7986cb; }
+.panel-right .grouped-window-list-item-demands-attention, .panel-right .window-list-item-demands-attention { box-shadow: inset -2px 0 #5294e2; }
 
 .window-list-preview { padding: 12px; spacing: 8px; border: none; border-radius: 8.5px; color: #f5f5f5; background-color: rgba(8, 8, 8, 0.93); box-shadow: 0 10px 14px rgba(0, 0, 0, 0.44); }
 
@@ -950,31 +975,231 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .grouped-window-list-button-label:rtl { padding-right: 4px; }
 
-.sound-player { padding: 0 3px; }
+/* Sound Player */
 
-.sound-player > StBoxLayout:first-child { padding: 0.4em 1em 0.8em; }
+.sound-player { 
+    padding: 0 3px;
+}
 
-.sound-player > StBoxLayout:first-child StLabel { padding: 0 0.4em 1px; }
+.sound-player > StBoxLayout:first-child {
+    padding: 0.4em 1em 0.8em;
+}
 
-.sound-player > StBoxLayout:first-child StButton:small { width: 16px; height: 16px; padding: 1px 0.4em 0; }
+.sound-player > StBoxLayout:first-child StLabel {
+    padding: 0 0.4em 1px;
+}
 
-.sound-player > StBoxLayout:first-child StButton:small StIcon { icon-size: 16px; }
+.sound-player > StBoxLayout:first-child StButton:small { 
+    width: 16px;
+    height: 16px;
+    padding: 1px 0.4em 0;
+}
 
-.sound-player-generic-coverart { background-color: #1d1d1d; }
+.sound-player > StBoxLayout:first-child StButton:small StIcon {
+    icon-size: 16px;
+}
 
-.sound-player-overlay { width: 290px; height: 70px; padding: 0.4em 1em 1.2em; spacing: 5px; border: 0 solid #080808; border-bottom-width: 1px; color: #f5f5f5; background: rgba(8, 8, 8, 0.93); }
+.sound-player-generic-coverart {
+    background-color: #1d1d1d;
+}
 
-.sound-player-overlay StButton { width: 32px; height: 32px; padding: 0; border-radius: 999px; border: 0 none transparent; color: rgba(245, 245, 245, 0.87); }
+.sound-player-overlay {
+    width: 290px;
+    height: 70px;
+    padding: 0.4em 1em 1.2em;
+    spacing: 5px;
+    border: 0 solid #080808;
+    border-bottom-width: 1px;
+    color: #f5f5f5;
+    background: rgba(8, 8, 8, 0.93);
+}
 
-.sound-player-overlay StButton:hover { border: none; background-color: rgba(245, 245, 245, 0.12); color: #f5f5f5; }
+.sound-player-overlay StButton {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 999px;
+    border: 0 none transparent;
+    color: rgba(245, 245, 245, 0.87);
+}
 
-.sound-player-overlay StButton:active { border: none; background-color: rgba(245, 245, 245, 0.25); color: #f5f5f5; box-shadow: 0 0 transparent; }
+.sound-player-overlay StButton:hover {
+    border: none;
+    background-color: rgba(245, 245, 245, 0.12);
+    color: #f5f5f5;
+}
 
-.sound-player-overlay StButton StIcon { icon-size: 16px; }
+.sound-player-overlay StButton:active {
+    border: none;
+    background-color: rgba(245, 245, 245, 0.25);
+    color: #f5f5f5;
+    box-shadow: 0 0 transparent;
+}
 
-.sound-player-overlay StLabel { padding: 0 5px 1px; }
+.sound-player-overlay StButton StIcon {
+    icon-size: 16px;
+}
 
-.sound-player .slider { height: 4px; padding: 0; border: 0 none transparent; -slider-height: 4px; -slider-background-color: #1f212f; -slider-border-color: transparent; -slider-active-background-color: #7986cb; -slider-active-border-color: transparent; -slider-border-width: 0; -slider-handle-radius: 0; }
+.sound-player-overlay StLabel {
+    padding: 0 5px 1px;
+}
+
+.sound-player .slider {
+    height: 4px;
+    padding: 0;
+    border: 0 none transparent; 
+    -slider-height: 4px; 
+    -slider-background-color: #1f212f; 
+    -slider-border-color: transparent;
+    -slider-active-background-color: #5192e1;
+    -slider-active-border-color: transparent; 
+    -slider-border-width: 0; 
+    -slider-handle-radius: 0;
+}
+
+.sound-player-overlay StBoxLayout {
+    padding-top: 4px;
+}
+
+.sound-player-overlay > StBoxLayout {
+    spacing: 5px;
+}
+
+/* .sound-button,
+  .modal-dialog-button-box .modal-dialog-button,
+  .notification-button, 
+  .notification-icon-button,
+  .popup-menu #notification .notification-button, 
+  .popup-menu #notification .notification-icon-button {
+  min-height: 20px;
+  padding: 7px 16px 8px;
+  transition-duration: 0;
+  color: rgba(158, 169, 228, 0.87);
+  background-color: rgba(0, 0, 0, 0.01);
+  border: none;
+  box-shadow: inset 0 0 0 2px transparent;
+  font-weight: 700;
+  border-radius: 2.5px;
+}
+
+.sound-button:focus, 
+  .modal-dialog-button-box .modal-dialog-button:focus, 
+  .notification-button:focus, 
+  .notification-icon-button:focus, 
+  .popup-menu #notification .notification-button:focus, 
+  .popup-menu #notification .notification-icon-button:focus {
+  border: none; 
+  color: #9ea9e4; 
+  box-shadow: inset 0 0 0 2px rgba(158, 169, 228, 0.2);
+}
+
+.sound-button:hover, 
+  .modal-dialog-button-box .modal-dialog-button:hover, 
+  .notification-button:hover, 
+  .notification-icon-button:hover, 
+  .popup-menu #notification .notification-button:hover, 
+  .popup-menu #notification .notification-icon-button:hover {
+  box-shadow: inset 0 2px 4px rgba(83, 84, 85, 0.05);
+  border: none;
+  background-color: rgba(158, 169, 228, 0.12); 
+  color: #9ea9e4;
+}
+
+.sound-button:hover:focus, 
+  .modal-dialog-button-box .modal-dialog-button:hover:focus, 
+  .notification-button:hover:focus, 
+  .notification-icon-button:hover:focus, 
+  .popup-menu #notification .notification-button:hover:focus, 
+  .popup-menu #notification .notification-icon-button:hover:focus {
+  border: none; 
+  color: #9ea9e4; 
+  box-shadow: inset 0 0 0 2px rgba(158, 169, 228, 0.2);
+}
+
+.sound-button:active, .modal-dialog-button-box .modal-dialog-button:active, .notification-button:active, .notification-icon-button:active, .popup-menu #notification .notification-button:active, .popup-menu #notification .notification-icon-button:active {
+  color: #ffffff;
+  background-color: #5294e2;
+  border: 1px solid #5294e2;
+  box-shadow: inset 0 2px 4px #5294e2; 
+}
+
+.sound-button:insensitive, .modal-dialog-button-box .modal-dialog-button:insensitive, .notification-button:insensitive, .notification-icon-button:insensitive, .popup-menu #notification .notification-button:insensitive, .popup-menu #notification .notification-icon-button:insensitive {
+  color: rgba(255, 255, 255, 0.32);
+  border: 1px solid rgba(33, 34, 34, 0.55);
+  background-color: rgba(70, 71, 72, 0.55);
+  box-shadow: inset 0 2px 4px rgba(70, 71, 72, 0.05); 
+}
+
+*/
+
+.sound-button {
+  width: 22px;
+  height: 13px;
+  padding: 8px;
+}
+
+.sound-button-container {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.sound-button StIcon {
+    icon-size: 1.4em;
+}
+
+.sound-track-infos {
+  padding: 5px;
+}
+
+.sound-track-info {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.sound-track-info StIcon {
+    icon-size: 16px;
+}
+
+.sound-track-info StLabel {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.sound-track-box {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 220px;
+}
+
+.sound-seek-box {
+  padding-left: 15px;
+}
+
+.sound-seek-box StLabel {
+    padding-top: 2px;
+}
+
+.sound-seek-box StIcon {
+    icon-size: 16px;
+}
+
+.sound-seek-slider {
+  width: 140px;
+}
+
+.sound-volume-menu-item {
+  padding: .4em 1.75em;
+}
+
+.sound-volume-menu-item StIcon {
+    icon-size: 1.14em;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.sound-playback-control {
+  padding: 5px 10px 10px 10px;
+}
 
 .spacer-box { border-radius: 0; border: 0 none transparent; }
 
@@ -1120,7 +1345,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .photoframe-box, .desklet-with-borders, .desklet-with-borders-and-header, .desklet-header { padding: 6px; border: 0 none transparent; background-color: rgba(8, 8, 8, 0.54); color: #f5f5f5; box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
 
-.photoframe-box:highlight, .desklet:highlight, .desklet:highlight-with-borders, .desklet:highlight-with-borders-and-header { background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 0 2px #7986cb; }
+.photoframe-box:highlight, .desklet:highlight, .desklet:highlight-with-borders, .desklet:highlight-with-borders-and-header { background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 0 2px #5294e2; }
 
 .desklet { color: rgba(245, 245, 245, 0.87); }
 
@@ -1130,7 +1355,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .desklet-header { border-radius-topleft: 8.5px; border-radius-topright: 8.5px; font-size: 100%; }
 
-.desklet-drag-placeholder { background-color: rgba(121, 134, 203, 0.2); box-shadow: inset 0 0 0 2px #7986cb; }
+.desklet-drag-placeholder { background-color: rgba(121, 134, 203, 0.2); box-shadow: inset 0 0 0 2px #5294e2; }
 
 .photoframe-box { border-radius: 8.5px; }
 
